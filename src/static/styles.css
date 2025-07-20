@@ -35,6 +35,31 @@ main {
   justify-content: center;
 }
 
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#search-input, #category-filter, #sort-select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#search-input {
+  flex: 2 1 200px;
+  min-width: 150px;
+}
+
+#category-filter, #sort-select {
+  flex: 1 1 120px;
+  min-width: 120px;
+}
+
 @media (min-width: 768px) {
   main {
     grid-template-columns: 2fr 1fr;
