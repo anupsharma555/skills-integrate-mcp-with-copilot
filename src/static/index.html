@@ -13,8 +13,25 @@
     </header>
 
     <main>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div class="toolbar">
+          <input type="text" id="search-input" placeholder="Search activities..." />
+          <select id="category-filter">
+            <option value="">All Categories</option>
+            <option value="Club">Club</option>
+            <option value="Class">Class</option>
+            <option value="Team">Team</option>
+            <option value="Art">Art</option>
+            <option value="Other">Other</option>
+          </select>
+          <select id="sort-select">
+            <option value="name">Sort by Name</option>
+            <option value="schedule">Sort by Schedule</option>
+            <option value="availability">Sort by Availability</option>
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
